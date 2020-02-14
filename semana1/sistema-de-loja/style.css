@@ -1,0 +1,166 @@
+{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background:#FACC2E;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+h1 {
+    font-family: roboto;
+    font-size: 7vw;
+}
+
+p, h3 {
+    font-family: roboto;
+    font-size: 1.6vw;
+    color: rgba(161, 63, 46, 0.918);
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr {
+    font-family: roboto;
+    font-size: 1.3vw;
+    color: rgba(161, 63, 46, 0.918);
+    background: rgb(250, 244, 187);
+}
+
+td {  
+    padding: 0.8vw;
+}
+
+td img {
+    width: 150px;
+    height: 125px;
+}
+
+#func tr, td, th {
+    width: 100vw;
+    padding: 1vw;
+    text-align: left;
+}
+
+a {
+    font-weight: bold;
+    font-family: roboto ;
+}
+
+gridlayout {
+    display: grid;
+    grid-template-areas: "topo" "content" "footer";
+    grid-template-rows: 30vh auto 20vh;
+}
+
+#topo {
+    grid-area: topo ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: tomato;
+    align-items: center;
+}
+#fst{
+    background: #FACC2E;
+    color: white; 
+}
+
+#snd {
+    color:white;
+}
+
+#content {
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: "#";   
+}
+
+#content > div {
+    padding: 2vw;
+}
+
+#content img {
+    width: 30vw;  
+}
+
+#rodape {
+    grid-area: footer;
+    background: tomato;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    font-size: 1.5vw;
+}
+
+.menu {
+    margin: 1vw;
+    text-decoration: none;
+    color: #FACC2E;    
+} 
+
+form {
+    padding: 0.8vh;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 1vh;
+}
+
+input, label, button {
+    width: 25vw;
+    height: 2vw;
+    font-family: roboto;
+    font-weight: bold;
+    color: rgba(161, 63, 46, 0.918);
+}
+
+label {
+    width: auto;
+    height: 2vw;
+}
+
+button {
+    width: 15vw;
+    height: 2vw;  
+}
+
+form {
+    width: 100vw;
+    font-size: 1.4vw;
+    font-family: roboto;
+    font-weight: bold;
+    color: rgba(161, 63, 46, 0.918);
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+input {  
+    width: 30vw;
+    height: 5vh; 
+}
+
+label {
+    width: 30vw;
+    height: auto;
+    text-align: right;
+    padding: 1vw;
+}
