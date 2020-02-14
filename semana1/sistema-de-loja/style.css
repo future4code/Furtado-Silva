@@ -1,15 +1,11 @@
-{
+* {
     padding: 0;
     margin: 0;
 }
 
 body {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 0vw 10vw 0vw 10vw;
     background:#FACC2E;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: fit-content;
 }
 
 h1 {
@@ -110,7 +106,12 @@ gridlayout {
     color: #FACC2E;    
 } 
 
+
 form {
+    font-size: 1.4vw;
+    font-family: roboto;
+    font-weight: bold;
+    color: rgba(161, 63, 46, 0.918);
     padding: 0.8vh;
 }
 
@@ -122,35 +123,9 @@ form > div {
 }
 
 input, label, button {
-    width: 25vw;
-    height: 2vw;
     font-family: roboto;
     font-weight: bold;
     color: rgba(161, 63, 46, 0.918);
-}
-
-label {
-    width: auto;
-    height: 2vw;
-}
-
-button {
-    width: 15vw;
-    height: 2vw;  
-}
-
-form {
-    width: 100vw;
-    font-size: 1.4vw;
-    font-family: roboto;
-    font-weight: bold;
-    color: rgba(161, 63, 46, 0.918);
-}
-
-form > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;  
 }
 
 input {  
@@ -163,4 +138,9 @@ label {
     height: auto;
     text-align: right;
     padding: 1vw;
+}
+
+button {
+    width: 15vw;
+    height: 2vw;  
 }
