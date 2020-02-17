@@ -10,6 +10,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -71,6 +72,9 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+    padding-left: 40vw;
+    padding-right: 40vw;
+
 }
 
 #container-de-descricao>ol {
