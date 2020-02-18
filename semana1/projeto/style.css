@@ -7,7 +7,8 @@ body {
     background: #42F8C1;
     font-family: 'Courier New', Courier, monospace;
     color: #212121;
-    font-size: larger;    
+    font-size: larger; 
+ 
 }
 
 h1 {
@@ -169,3 +170,79 @@ button {
     height: auto;
 }
 
+/** DISPOSITIVOS 
+MÓVEIS **/
+
+@media only screen and (max-width: 768px) {
+   
+    #menu {
+        padding-left: 0;
+    }
+    .pageMenu {
+    width: 100vw;
+    font-size: 4.5vw;
+    }
+
+    .pageMenu ul {
+        width: 100vw;
+    }
+
+    #personal{
+        flex-wrap: wrap;
+    }
+
+    #personal img {
+        width: 20vh;
+        border-radius: 50%;
+       }
+        
+    #personal h1 {
+        font-size: 15vw;
+    }
+
+    #bio {
+        padding: 10%;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #projetos {
+        padding: 5vw;
+    }
+    
+    #projetos div {
+        margin: 1vw
+    }
+    
+    #projetos img {
+        width: 80vw;
+    }
+
+    #skill-contact {
+        flex-wrap: wrap;
+    }
+
+    #skill-contact ul {
+        width: 90vw;
+    }
+
+    form {
+        margin-top: 2vh;
+        width: 90vw;
+    }
+
+    form h3 {
+        text-align: center;
+    }
+
+    input, textarea, button {
+        width: auto;
+        padding: 4vw;
+    }
+
+    #social li img{
+        width: 5vw;
+        height: auto;
+    }
+
+}  
