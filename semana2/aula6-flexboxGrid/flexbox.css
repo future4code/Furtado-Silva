@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: white;
+}
+
+.flexboxLayout{
+    max-width: 100vw;
+    max-height: 100vw;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.flexItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#header { 
+    background: #2ECC40;
+    width: 20vw;
+    height: 10vh;
+    order: 1;
+}
+
+#menu { 
+    background: #FFDC00;
+    width: 80vw;
+    height: 10vh;
+    order: 2;
+}
+#content1 { 
+    background: #F012BE;
+    width: 100vw;
+    height: 50vh;
+    order: 3;
+}
+#content2 { 
+    background: #0074D9;
+    width: 40vw;
+    height: 30vh;
+    order: 4;
+}
+#content3 { 
+    background: white;
+    width: 30vw;
+    height: 30vh;
+    order: 5;
+}
+
+#subcontainer {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;  
+    width: 30vw;
+    height: 30vh;
+    order: 6;
+    align-items: stretch;
+
+}
+
+#image { 
+    background: #FF4136;
+    width:100vw;
+    height:auto;
+    order: 1;
+}
+
+#extra { 
+    background: #01FF70;
+    width:100vw;
+    height: auto;
+    order: 2;
+}
+#footer { 
+    background: #B10DC9;
+    width: 100vw;
+    height: 10vh;
+    order: 9;
+}
+
+/* #2ECC40
+
+#FFDC00
+
+#F012BE
+
+#0074D9
+
+#FF4136
+
+#01FF70
+
+#B10DC9 */
