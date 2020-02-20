@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.gridContainer {
+    background: white;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    gap: 2%;
+    padding: 2%;    
+}
+
+.grid {
+    border: 1px solid black; 
+}
+
+.item1{
+    background: red;
+    grid-area: 1/1/1/4;
+   
+}
+.item2{
+    background: rgb(104, 15, 247);
+    grid-area: 2/1 ;
+}
+.item3{
+    background: rgb(229, 255, 0);
+    grid-area: 2/2 ;
+
+}
+.item4{
+    background: rgb(43, 255, 0);
+    grid-area: 2/3;
+
+}
+.item5{
+    background: rgb(143, 3, 3);
+    grid-area: 3/1 ;
+}
+.item6{
+    background: rgb(45, 175, 226);
+    grid-area: 3/2;
+}
+.item7{
+    background: rgb(0, 255, 98);
+    grid-area: 3/3 ;
+}
+
+.item8{
+    background: rgb(19, 46, 0);
+    grid-area: 4/2 ;    
+}
+.item9{
+    background: rgb(48, 0, 48);
+    grid-area: 4/3 ;
+}
+.item10{
+    background: rgb(194, 214, 15);
+    grid-area: 5/1 ;
+}
+.item11{
+    background: rgb(2, 15, 197);
+    grid-area: 5/2;
+}
+
+.item12{
+    background: rgb(210, 233, 3);
+    grid-area: 5/3 ;
+}
+
+@media screen and (max-width:768px){
+    .gridContainer {
+        grid-auto-columns: auto;
+    }
+}
