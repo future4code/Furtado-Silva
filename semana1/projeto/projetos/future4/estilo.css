@@ -1,0 +1,168 @@
+html, body 
+{
+  padding: 0;
+  margin: 0;
+  background: #282828;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { font-size: 22px; }
+h2 { color: white; width: 80%; font-style: italic; }
+p { font-style: italic; font-weight: bolder; }
+
+@media only screen and (min-width: 769px)
+{
+  container
+  {
+    width: 70vw;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;   
+  } 
+}
+
+@media only screen and (max-width: 768px) 
+{
+  
+  #web, #mobile, #datasci
+  {
+    max-width: 130px;
+    height: auto;
+  } 
+
+  .section5 
+  {
+    padding: 20px;
+    flex-direction: row;
+    align-content: center;
+  } 
+input, button { margin: 10px; }
+} 
+
+container 
+{
+  background: #595e96;
+  display: grid;
+  grid-template-areas: "topo" "logo" "cursos" "texto" "rodape";
+  grid-template-rows: 8vh 23vh 39vh 8vh 22vh;
+  grid-gap: 0 px;
+}
+container > .section1 
+{
+  grid-area: topo;
+  background: #cc4c00;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+container > .section2 
+{
+  grid-area: logo;
+  background: #595e96;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+img 
+{
+  max-width: 220px;
+  height: auto;
+}
+
+container > .section3 
+{
+  grid-area: cursos;
+  background: #595e96;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center; 
+}
+
+.section3 > div 
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 24vh;
+  height: 18vh;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#web { background: #769ee4; }
+#mobile { background: #9ec284; }
+#datasci { background: #d36d69; }
+
+container > .section4 
+{
+  grid-area: texto;
+  background: #595e96;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.section4 > div 
+{
+  background: none;
+  width: 130px;
+  height: 30px;
+  margin: 5px;
+}
+
+container > .section5 
+{
+  grid-area: rodape;
+  background: #d8d8d8;
+}
+
+form 
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width:100%;
+  height: 100%; 
+}
+
+input
+{
+  font-size: 14.4px;
+  font-weight: bold;
+  font-family: arial;
+  width: 260px;
+  height: 36px;
+  border: 1px solid gray;
+}
+
+button 
+{
+  background: #cc4c00;
+  color: white;
+  font-size: 16px;
+  font-family: arial;
+  font-weight: bold;
+  border:1px solid gray;
+  width: 90px;
+  height: 40px;
+}
+
+  
+ 
+
+
+
+
