@@ -6,9 +6,11 @@
    
     }
 
+
     h1 {
         color: white;
         font-size: 8vh;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     a {
@@ -128,13 +130,13 @@ section > article {
 }
 
 video {
-    max-width: 95vw ;
+    max-width: 90vw ;
     height: 75%;   
     margin: 0;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 3vw;
     width: 95%;
     margin: 0;
     align-self: flex-end;
