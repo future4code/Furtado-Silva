@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    border: 0;
+    color: rgb(24, 24, 24);
     }
     
     .container {
@@ -37,11 +40,35 @@
         align-content: space-around; 
     }
 
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;  
+        align-items: center; 
+        flex-grow: 1;     
+        }
+
     main > article {
         width: auto;
         height: auto;
-        margin: 0;
+     } 
+
+     article > a {
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 1%;
+        font-size: 1.4em;
+    }
+
+     article > a > img {
+        width: 100%;
+        height: auto;
      }
+
+     
+
     
     #video1 {background: yellowgreen; grid-area: video1;}
     #video2 {background: yellowgreen; grid-area: video2;}
