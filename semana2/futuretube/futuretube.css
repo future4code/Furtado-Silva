@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: 0;
+   
+    }
+
+
+    h1 {
+        color: white;
+        font-size: 8vh;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    .container {
+        max-width: 100vw;
+        max-height: 100vh;
+        height: 100vw;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 15vh auto 15vh; 
+        grid-template-areas: "header" "main" "footer";
+    }
+    
+    header {
+        max-width: 100vw;
+        grid-area: header;
+        background-color: rgb(24, 24, 24);
+        display: grid;
+        grid-template-columns: 70vw 25vw;
+        padding: 2vw;
+        align-content: center;  
+    }
+
+    input {
+        width: 20vw;
+        height: 5vh;
+        align-self: center;
+        justify-self: end;
+        margin-left: 5vw;
+    }
+ 
+    main {
+        grid-area: main;
+        background-color: rgb(255, 255, 255);
+    
+        display: grid;
+        grid-template-columns: repeat(4, 22vw);
+        grid-template-rows: 25vh 25vh; 
+       
+        grid-template-areas: "video1 video2 video3 video4"
+        "video5 video6 video7 video8";
+    
+        gap: 2%;
+        padding: 2%;
+        background: rgb(255, 255, 255);
+    
+        justify-content: space-around;
+        align-content: space-around; 
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;  
+        align-items: center; 
+        flex-grow: 1;     
+        }
+
+    main > article {
+        width: auto;
+        height: auto;
+     } 
+
+    article > a {
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 1%;
+        font-size: 1.4em;
+    }
+
+     article > a > img {
+        width: 100%;
+        height: auto;
+     }
+
+    #video1 {background: none; grid-area: video1;}
+    #video2 {background:none; grid-area: video2;}
+    #video3 {background: none; grid-area: video3;}
+    #video4 {background: none; grid-area: video4;}
+    #video5 {background: none; grid-area: video5;}
+    #video6 {background: none; grid-area: video6;}
+    #video7 {background: none; grid-area: video7;}
+    #video8 {background: none; grid-area: video8;}
+    
+    footer {
+        grid-area: footer;
+        background-color: rgb(29, 29, 29);
+        display: flex;
+        padding: 2vw;
+        align-items: center;
+    }
+
+    footer > p {
+        font-size: 3em;
+        font-weight: bold;
+        color: white;
+    }
+
+    /**
+PÁGINA VÍDEO 
+**/
+
+section > article {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    max-width: 90vw ;
+    height: 75%;   
+    margin: 0;
+}
+
+h2 {
+    font-size: 3vw;
+    width: 95%;
+    margin: 0;
+    align-self: flex-end;
+}
+
+    /**
+            MOBILE
+    **/
+
+@media screen and (max-width:768px) {
+
+    .container {
+        grid-template-rows: 15vh auto 15vh; 
+    }  
+
+    header {
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        padding: 4vw;
+    }
+
+    input {
+        width: fit-content;
+        height: 3vh;
+        justify-self: center;
+    }
+
+    header > h1{
+        text-align: center;
+    }
+    
+     main {
+        grid-template-columns: auto;
+        grid-template-rows: auto; 
+        grid-template-areas: "video1" "video2" 
+                                "video3" "video4"
+                                 "video5" "video6" 
+                                     "video7" "video8";
+        justify-content: unset;
+        align-content: unset;    
+        gap: 2vw;
+    } 
+    
+    main > article {
+       width: 95vw;
+       height: 240px;
+       margin: 0;
+    }
+
+    footer {
+    }
+
+     /**
+PÁGINA VÍDEO MOBILE
+**/
+
+h2 {font-size: 6vw;}
+
+}
+
