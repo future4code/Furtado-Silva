@@ -31,7 +31,7 @@ A mensagem de erro é que a variável não foi declarada.
    
 */
 
-// Exercícios de escrita de código
+// Exercícios de escrita de código ===================
 /**
  * EXERCÍCIO #4
  
@@ -60,34 +60,51 @@ console.log(n1)
 //  * EXERCÍCIO #5
 
 const reinoAnimal = prompt("O animal possui OSSOS (s/n)")
-const testaMamifero = prompt("O animal possui PELOS? (s/n)")
-//const testaHumano = prompt("O animal é RACIONAL? (s/n)")
-const testaAve = prompt("O animal possui PENAS? (s/n)")
-//const testaTerrestre = prompt("O animal é TERRESTRE? (s/n)")
-//const testaAnfibio = prompt("O animal passa a PRIMEIRA FASE da vida no AMBIENTE AQUÁTICO? (s/n)")
+let testaMamifero
+let testaHumano
+let testaAve
+let testaTerrestre
+let testaAnfibio
 
 let reino 
 let grupo
-let naoHumano
-let ave 
+let especie
 
-
-if (reinoAnimal === "s") {
-   reino = "Vertebrado"
-} else {
-    reino = "Invertebrado"
-}
-
-if (testaMamifero === "s") {
-    grupo = "Mamífero"
- } else if (testaAve === "s"){
-    grupo = "Ave"
- } 
-
- if (testaAve)
-
- 
-
-
-console.log(reino, grupo)
-
+if(reinoAnimal === "s") { //inicio bloco
+    reino = "Vertebrado"
+    testaMamifero = prompt("O animal possui PELOS? (s/n)")
+    
+    if(testaMamifero === "s") {
+        grupo = "Mamífero"
+        testaHumano = prompt("O animal é RACIONAL? (s/n)")
+    } if(testaHumano ==="s") {
+        especie = "Humano"
+        console.log(especie)    
+    } if(testaHumano ==="n" ) {
+        especie = "Não Humano"
+        console.log(especie)
+    } if(testaMamifero==="n") {
+        testaAve = prompt("O animal possui PENAS? (s/n)")  
+    } if(testaAve === "s") {
+        especie = "Ave"
+        console.log(especie)
+    } if(testaAve === "n") {
+        testaTerrestre = prompt("O animal é TERRESTRE? (s/n)")  
+    } if(testaTerrestre === "s") {
+        testaAnfibio = prompt("O animal passa a PRIMEIRA FASE da vida no AMBIENTE AQUÁTICO? (s/n)")
+    } if(testaAnfibio ==="s") {
+        especie = "Anfíbio"
+        console.log(especie)
+    } if(testaAnfibio ==="n") {
+        especie = "Reptil"
+        console.log(especie)
+    } if(testaTerrestre === "n") {
+        especie = "Peixe"
+        console.log(especie)
+    } 
+    
+ } //fim bloco 
+ else {
+    reino = "Invertebrado" 
+    console.log(reino)
+ }
