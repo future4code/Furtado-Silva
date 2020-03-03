@@ -32,33 +32,17 @@ A mensagem de erro é que a variável não foi declarada.
 */
 
 // Exercícios de escrita de código ===================
-/**
- * EXERCÍCIO #4
+
+ // * EXERCÍCIO #4
  
-const n1 = Number(prompt("Insira PRIMEIRO valor numérico"))
-const n2 = Number(prompt("Insira SEGUNDO valor numérico"))
-const n3 = Number(prompt("Insira TERCEIRO valor numérico"))
+let n1 = Number(prompt("Insira PRIMEIRO valor numérico"))
+let n2 = Number(prompt("Insira SEGUNDO valor numérico"))
+let n3 = Number(prompt("Insira TERCEIRO valor numérico"))
 
-let primeiro
-let segundo
-let terceiro
 
-switch (n1) {
-    case n1<n2 && n1<n3:
-    primeiro = n1;
-
-    case n2>n1 && n2<n3:
-    segundo = n2;
-
-    case n3>n2 && n3>n1:
-    terceiro = n3;
-}
-
-console.log(n1)
-*/
 
 //  * EXERCÍCIO #5
-
+/**
 const reinoAnimal = prompt("O animal possui OSSOS (s/n)")
 let testaMamifero
 let testaHumano
@@ -108,3 +92,4 @@ if(reinoAnimal === "s") { //inicio bloco
     reino = "Invertebrado" 
     console.log(reino)
  }
+ */
